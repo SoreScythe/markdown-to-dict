@@ -26,4 +26,3 @@ path = 'path/to/file
 data = getMkDict(path, json=True)
 print(data)
 ~~~
->>>>>>> master
