@@ -6,10 +6,10 @@ def parser():
     from argparse import ArgumentParser
     p = ArgumentParser(prog="Markdown Data Extractor")
 
-    p.add_argument('-p', '--path', required=True, type=str)
-    p.add_argument('-o', '--output', required=False, default=stdout)
-    p.add_argument('-j', '--json', required=False, default=False, action='store_true')
-    p.add_argument('-t', '--terminal', required=False, default=True, action='store_true')
+    p.add_argument('-p', '--path', required=True, type=str, help="path to the markdown file")
+    p.add_argument('-o', '--output', required=False, default=stdout, help="path to output file")
+    p.add_argument('-j', '--json', required=False, default=False, action='store_true', help='output json format')
+    p.add_argument('-t', '--terminal', required=False, default=True, action='store_true', help='output to stdout')
 
     args = p.parse_args(argv[1:])
     return args
