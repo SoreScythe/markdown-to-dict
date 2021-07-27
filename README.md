@@ -1,9 +1,6 @@
 # markdown-to-dict
-<<<<<<< HEAD
 A simple script to extract data inside markdown files.
 =======
-A simple Python script to extract data inside markdown files.
-
 > Simple to use script for easy data extraction
 
 ~~~Bash
